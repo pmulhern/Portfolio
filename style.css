@@ -1,0 +1,34 @@
+
+body {
+background: url(./texture.png)
+}
+
+#brand {
+
+    font-size: xx-large;
+    margin: 15px, 10px, 15px, 10px;
+    padding: 15px, 10px, 15px, 10px;
+    }
+
+#about {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about_me {
+    color: #21d192;
+    font-weight: bold;
+    }
+
+hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+#sticky-footer {
+  flex-shrink: none;
+}
