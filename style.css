@@ -15,7 +15,17 @@ background: url(./texture.png)
     margin-left: auto;
 }
 
+#contact {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #about_me {
+    color: #21d192;
+    font-weight: bold;
+    }
+
+#contact_me {
     color: #21d192;
     font-weight: bold;
     }
