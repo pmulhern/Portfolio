@@ -1,8 +1,9 @@
-
+/* Adding the background to all 3 html pages*/
 body {
 background: url(./texture.png)
 }
 
+/* Formatting my name on the nav bar*/
 #brand {
 
     font-size: xx-large;
@@ -10,35 +11,57 @@ background: url(./texture.png)
     padding: 15px, 10px, 15px, 10px;
     }
 
+/* Adding the Hover Format to the About, Contact Me and Portfolio links on the nav bar*/
+.nav-link:hover {
+    background-color: #21d192;
+    }
+
+/* Adding an Active Format to the About, Contact Me and Portfolio links on the nav bar*/
+.nav-link:active {
+    font-size: x-large;
+    font-weight: bold;
+    }
+
+/* Centers the About Me Card on the About tab*/
 #about {
     margin-right: auto;
     margin-left: auto;
 }
 
+/* Centers the Contact Me Card on the Contact Me tab*/
 #contact {
     margin-right: auto;
     margin-left: auto;
 }
 
+/* Formatting for the Header on the About Me tab*/
 #about_me {
     color: #21d192;
     font-weight: bold;
+    font-size: xx-large;
     }
 
+/* Formatting for the Header on the Contact Me tab*/
 #contact_me {
     color: #21d192;
     font-weight: bold;
+    font-size: xx-large;
     }
 
+/* Formatting for the Header on the Portfolio tab*/
+#portfolio {
+    color: #21d192;
+    font-weight: bold;
+    font-size: xx-large;
+    }
+
+/* Formatting the line that separates the headers from the sections on the main cards/ forms*/  
 hr {
         display: block;
-        height: 1px;
+        height: 10px;
         border: 0;
         border-top: 1px solid #ccc;
         margin: 1em 0;
         padding: 0;
     }
 
-.nav-link:hover {
-    background-color: #21d192;
-  }
