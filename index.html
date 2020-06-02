@@ -7,8 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Link to CSS style sheet -->
     <link rel="stylesheet" href="./style.css">  
+    <!-- Icon for Web tab -->
     <link rel="shortcut icon" type="image/png" href= "./portfolio.png">    
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/3df8a06ea2.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <title>Home Page</title>
   </head>
   <body>
@@ -23,21 +29,21 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html" >About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Me</a>
+              <a class="nav-link" href="contact.html" >Contact Me <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="portfolio.html" >Portfolio <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
     </nav>
     
     <br> <br>
-
-    <Section class="card mb-12" id ="about" style="max-width: 800px;">
+    <!-- Main About Me Section.  Leveraging a card class from Bootstrap for responsive formatting -->
+    <Main class="card mb-12" id ="about" style="max-width: 800px;">
         <div class="row">
             <div class="col-sm-12">
                 <h5 class="card-title ml-5 mt-3" id="about_me" >About Me</h5>
@@ -45,24 +51,40 @@
             </div>    
         </div>
 
-        <div class="row">
-          <div class="col-sm-4 ml-5">
+        <Section class="row">
+          <div class="col-sm-3 ml-5 mb-2">
             <img src="./Profile_Pic.jpg" class="card-img" alt="Profile Picture">
           </div>
             <div class="col-sm-7">
-                <p class="card-text mr-2">I have over 13 years experience in the Financial Services industry supporting a variety of products including: Equity, Fixed Income, Derivatives, FXs, Bank Loans, Stable Value and Private Equity.</p>
-                <p class="card-text mr-2">I am highly driven, self-motivated individual with a focus on change leadership driving process improvements and innovative operational strategies. </p>    
-                <p class="card-text mr-3"> I excel at rolling up the sleeves and diving into the operational trenches. Have excellent experience leading people.</p>
+                <p class="card-text mr-2">I have 15+ years of professional experience supporting Equity, Fixed Income, Derivatives, FXs, Bank Loans, Stable Value and Private Equity operations. After a decade and a half working in the investment operations space, I am transitioning to my dream career as a full-stack programmer!</p>
+                <p class="card-text mr-2">I started my career at La Salle University where intellectual curiousity led me to test and build a proprietary database in </p>    
             </div> 
-        </div>
+        </Section>
+
+        <Section class="row">
+           <div class="col-sm-11">                           
+                <p class="card-text ml-5"> Microsoft Access.  The database was exclusively used by the Assistant Director for Graduate Admissions to manage student enrollment. This database utility tracked student deliverables and had reporting and communication functionality.  It vastly improved and centralized the admission workflow.</p>
+           </div>
+        </Section>
+       
         <br>
-        <div class="row">
-            <div class="col-sm-12">                           
-                <p class="card-text ml-5"> As well as experience in fund conversions/ transitions, price analysis, reconciliations and trading operations spaces. </p>
-                <p class="card-text ml-5"><small class="text-muted">"Energy and persistence conquers all things" -Benjamin Franklin</small></p>  
+        
+        <Section class="row">
+            <div class="col-sm-11">                           
+                <p class="card-text ml-5"> Over the years my skills in formula writing and report building in Excel/Access evolved to writing VBA scripts and SQL statements to solve business problems and drive efficient workflows. </p>
             </div>
-        </div>
-      </Section>
+          </Section>
+
+        <br>
+
+        <Section class="row">
+          <div class="col-sm-11">                           
+              <p class="card-text ml-5"> This next chapter of my career is especially exciting given my passion for coding and building systems that help people improve the quality and timeliness of their work deliverables! The combination of my passion, experience, education and University of Pennsylvania Coding Bootcamp certificate has given me the tools and knowledge I need to be successful. </p>
+              <p class="card-text ml-5"><small class="text-muted">"Energy and persistence conquers all things" -Benjamin Franklin</small></p> 
+          </div>
+        </Section>
+       
+      </Main>
   
     <br> <br>
 
@@ -83,28 +105,24 @@
   
           <!-- Grid column -->
           <div class="col-md-6 col-lg-7 text-center text-md-right">
-  
+             
+            <!-- GitHub-->
+             <a class="gplus-ic" href="https://github.com/pmulhern" target="_blank">
+              <i class="fab fa-github white-text mr-4" ></i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic" href="https://www.linkedin.com/in/patrick-mulhern-1a82b66b?trk=profile-badge" target="_blank">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
             <!-- Facebook -->
-            <a class="fb-ic">
+            <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100017525283892" target="_blank">
               <i class="fab fa-facebook-f white-text mr-4"> </i>
             </a>
             <!-- Twitter -->
-            <a class="tw-ic">
+            <a class="tw-ic" href="https://twitter.com/PatrickMulher13" target="_blank">
               <i class="fab fa-twitter white-text mr-4"> </i>
             </a>
-            <!-- Google +-->
-            <a class="gplus-ic">
-              <i class="fab fa-google-plus-g white-text mr-4"> </i>
-            </a>
-            <!--Linkedin -->
-            <a class="li-ic">
-              <i class="fab fa-linkedin-in white-text mr-4"> </i>
-            </a>
-            <!--Instagram-->
-            <a class="ins-ic">
-              <i class="fab fa-instagram white-text"> </i>
-            </a>
-  
+           
           </div>
           <!-- Grid column -->
   
@@ -124,11 +142,9 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
   
           <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <h6 class="text-uppercase font-weight-bold">P.J. Developers</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-            consectetur
-            adipisicing elit.</p>
+          <p>Our company offers an array of web development services.  Check out the Portfolio pages for examples as well as our GitHub link to view our code base.</p>
   
         </div>
         <!-- Grid column -->
@@ -136,20 +152,20 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
   
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <!-- Web Services - Just making stuff up for now -->
+          <h6 class="text-uppercase font-weight-bold">Web Services</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a class="dark-grey-text" href="#!">MDBootstrap</a>
+            <a class="dark-grey-text" >HTML Refactoring</a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">MDWordPress</a>
+            <a class="dark-grey-text" >Responsive Web Page Design</a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">BrandFlow</a>
+            <a class="dark-grey-text" >Unique and Personal Website Schemas</a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+            <a class="dark-grey-text" >Something JaveScript I haven't learned yet  lol</a>
           </p>
   
         </div>
@@ -159,20 +175,18 @@
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
   
           <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <h6 class="text-uppercase font-weight-bold">Back End Services</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a class="dark-grey-text" href="#!">Your Account</a>
+            <a class="dark-grey-text" >Query Development</a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+            <a class="dark-grey-text" >Effeciency Protocols</a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">Shipping Rates</a>
+            <a class="dark-grey-text" >Custom Report Development</a>
           </p>
-          <p>
-            <a class="dark-grey-text" href="#!">Help</a>
-          </p>
+
   
         </div>
         <!-- Grid column -->
@@ -184,13 +198,13 @@
           <h6 class="text-uppercase font-weight-bold">Contact</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <i class="fas fa-home mr-3"></i> Philadelphia, PA 19114, US</p>
           <p>
-            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <i class="fas fa-envelope mr-3"></i> Patrick.J.Mulhern1@gmail.com</p>
           <p>
-            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <i class="fas fa-phone mr-3"></i> (215) 813-4817</p>
           <p>
-            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <i class="fas fa-print mr-3"></i> (267) 498-7213</p>
   
         </div>
         <!-- Grid column -->

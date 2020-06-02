@@ -39,6 +39,6 @@ hr {
         padding: 0;
     }
 
-#sticky-footer {
-  flex-shrink: none;
-}
+.nav-link:hover {
+    background-color: #21d192;
+  }
