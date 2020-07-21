@@ -58,3 +58,4 @@ We were instructed to use bootstrap for:
 ### Bonus
 
 * The sticky footer did not look right when I added it.  I will continue to research as this maybe something I add down the road, but for now it is not active.
+# ReadMe_Generator
