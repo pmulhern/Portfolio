@@ -10,7 +10,7 @@
      <!-- Link to CSS style sheet -->
      <link rel="stylesheet" href="./style.css">  
      <!-- Icon for Web tab -->
-     <link rel="shortcut icon" type="image/png" href= "./portfolio.png">    
+     <link rel="shortcut icon" type="image/png" href= "./Assets/portfolio.png">    
      <!-- Font Awesome link -->
      <script src="https://kit.fontawesome.com/3df8a06ea2.js" crossorigin="anonymous"></script>
  
@@ -21,7 +21,7 @@
 
     <!-- Navigation bar leveraging bootstrap framework: About, Contact & Portfolio links -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
-        <a class="navbar-brand">  <img src="./html3.png" alt="Portfolio"> </a>
+        <a class="navbar-brand">  <img src="./Assets/html3.png" alt="Portfolio"> </a>
         <a class="navbar-brand" id="brand" href="#"> Patrick J. Mulhern Jr.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -66,7 +66,7 @@
         <!-- Will contain links to resume -->
         <section class="row mb-3">
             <div class="col-lg-4 rounded mx-auto d-block">
-                <a href="resume.html" target="_blank"><h5 class="text-center">Resume</h5></a>
+                <a href="Assets/resume.html" target="_blank"><h5 class="text-center">Resume</h5></a>
                 <img src="https://www.milkandhoneypr.com/wp-content/uploads/2019/05/Screenshot-2019-05-31-at-13.21.29-1170x658.png" class="card-img" alt="Experience" height="200" width="30">
             </div>
         </section>   
@@ -77,25 +77,57 @@
 
   <h1 class="text-center" id="projects"><u>Projects</u></h1>
 
-  <br> <br>      
+  <br> <br>
+ <!-- VOTING APPLICATION -->
+  <main class="card mb-12" id ="about" style="max-width: 60%;">
+    <section class="row">
+        <div class="col-sm-12">
+            <h6 class=" portfolio card-title mx-4 mt-3" id="portfolio">Web Based Voting Application</h6>
+            <hr class="mx-5">
+        </div>    
+    </section>
+
+    <section class="row">
+      <div class="col-sm-11 mx-5">
+        <img src="Assets/VotingApp.gif" class="img-fluid" alt="Weather Dashboard" height="auto" width="auto">
+      </div>
+    </section>  
+
+    <section class="row">
+    <div class="col-sm-11 mx-5 mb-4">
+      <br>
+      <h5 class="text-left"> <u>Scope</u></h5>
+      <p class="card-text"> A Web Based Proof of Concept Voting application inspired by the COVID-19 pandemic.  Created to provide states and their citizens an alternative to in person and mail in voting.  This full stack application uses the MVC Framework and features: Node.js, Javascript, jQuery, Handlebars, MySQL, Bootstrap, HTML and light CSS.</p>
+      <p class="card-text">The application utitlizes multiple API calls that identify and validate a voter's location allowing for built in controls to match against DMV/ voter registration data.  Additional APIs retrieve the voter's ballot information based on their DMV/ voter registration data. </p>
+      <p class="card-text">Security features include passport and data hashing.  Opportunities for additional development include enhanced security features as well as party line voting. Lastly additional UI/ UX features could be incorporated. However the end goal would be to migrate the code to a state based website and styling would then be applied to match the state's existing schema.</p>
+      <p class="card-text"></p>
+      <p class="card-text">Click to review:</p>
+      <a class="nav-link" href="https://gentle-ocean-53258.herokuapp.com/" target="_blank"> Deployed Application </a>
+      <a class="nav-link" href="https://github.com/ydoc118/project-2" target="_blank"> GitHub Repository </a>
+    </div>
+    </section>   
+</main> 
+
+<br> <br>
 
   <main class="card mb-12" id ="about" style="max-width: 60%;">
           <div class="row">
               <div class="col-sm-12">
-                  <h6 class="card-title mx-5 mt-3" id="portfolio">COVID-19 US Travel Assistant</h6>
+                  <h6 class="card-title mx-4 mt-3" id="portfolio">COVID-19 US Travel Assistant</h6>
                   <hr class="mx-5">
               </div>    
           </div>
         
       <section class="row">
           <div class="col-sm-4 mx-5 mb-4">
-              <img src="COVID19.png" class="img-fluid" alt="COVID-19 Travel Assistant" height="auto" width="auto">
+              <img src="Assets/COVID19.png" class="img-fluid" alt="COVID-19 Travel Assistant" height="auto" width="auto">
           </div>
 
           <div class="col-sm-5 mx-5">
             <h5 class="text-left"> <u>Scope</u></h5>
             <p class="card-text"> The COVID-19 US Travel Assistant was inspired by the COVID-19 pandemic coupled with personal experiences.  The application was designed to provide decision making data to individuals who travel frequently or considering to travel to another US State.</p>
             <p class="card-text">The application provides state level COVID-19 data on infections, recoveries, deaths, currently active cases, links to daily state trends and specific county information as well as top news articles.</p>
+            <!-- <p class="card-text" style="color:red;">NOTE: THIS APPLICATION IS CURRENTLY UNDER CONSTRUCTION DUE TO RECENT API CHANGES</p> -->
             <p class="card-text">Click to review:</p>
             <a class="nav-link" href="https://millhouse36.github.io/Covid-19-contact-tracing-and-data-app/" target="_blank"> Deployed Application </a>
             <a class="nav-link" href="https://github.com/MIllhouse36/Covid-19-contact-tracing-and-data-app" target="_blank"> GitHub Repository </a>
@@ -108,14 +140,14 @@
   <main class="card mb-12" id ="about" style="max-width: 60%;">
       <section class="row">
           <div class="col-sm-12">
-              <h6 class="card-title mx-5 mt-3" id="portfolio">Weather Dashboard</h6>
+              <h6 class=" portfolio card-title mx-4 mt-3" id="portfolio">Weather Dashboard</h6>
               <hr class="mx-5">
           </div>    
       </section>
 
       <section class="row">
         <div class="col-sm-11 mx-5">
-          <img src="WeatherDashboard.jpg" class="img-fluid" alt="Weather Dashboard" height="auto" width="auto">
+          <img src="Assets/WeatherDashboard.jpg" class="img-fluid" alt="Weather Dashboard" height="auto" width="auto">
         </div>
       </section>  
 
@@ -144,7 +176,7 @@
 
       <section class="row">
         <div class="col-sm-11 mx-5 mb-4">
-            <img src="TimedQuiz.jpg" class="img-fluid" alt="Timed Quiz" height="auto" width="auto">
+            <img src="Assets/TimedQuiz.jpg" class="img-fluid" alt="Timed Quiz" height="auto" width="auto">
         </div>
       </section>
 
@@ -162,18 +194,18 @@
   </main>
 
   <br> <br>      
-
+<!-- Work Day Scheduler -->
   <main class="card mb-12" id ="about" style="max-width: 60%;">
     <section class="row">
         <div class="col-sm-12">
-            <h6 class="card-title mx-5 mt-3" id="portfolio">Work Day Scheduler</h6>
+            <h6 class="card-title mx-4 mt-3" id="portfolio">Work Day Scheduler</h6>
             <hr class="mx-5">
         </div>    
       </section>
 
     <section class="row">
       <div class="col-sm-11 mx-5 mb-4">
-          <img src="DayPlanner.jpg" class="img-fluid" alt="Timed Quiz" height="auto" width="auto">
+          <img src="Assets/DayPlanner.jpg" class="img-fluid" alt="Timed Quiz" height="auto" width="auto">
       </div>
     </section>
 
@@ -195,11 +227,11 @@
   </main>  
       
   <br> <br>
-
+<!-- Password generator -->
   <main class="card mb-12" id ="about" style="max-width: 60%;">
     <div class="row">
         <div class="col-sm-12">
-            <h6 class="card-title mx-5 mt-3" id="portfolio">Generate Unique Password</h6>
+            <h6 class="card-title mx-4 mt-3" id="portfolio">Generate Unique Password</h6>
             <hr class="mx-5">
         </div>    
     </div>
@@ -215,7 +247,7 @@
     </div>
 
     <div class="col-sm-6 mx-5 mb-4">
-      <img src="PasswordGenerator.png" class="img-fluid" alt="COVID-19 Travel Assistant" height="auto" width="auto">
+      <img src="Assets/PasswordGenerator.png" class="img-fluid" alt="COVID-19 Travel Assistant" height="auto" width="auto">
     </div>
   </section>   
   </main>
@@ -306,135 +338,136 @@
 
   <br> <br>
 
-  <!-- Footer -->
-  <footer class="page-footer font-small blue-grey lighten-5" id="sticky_footer">
+ <!-- Footer -->
+<footer style="background-color: #21d192;" class="page-footer font-small blue-grey lighten-5" id="sticky_footer">
 
-    <div style="background-color: #21d192;">
-      <div class="container">
-  
-        <!-- Grid row-->
-        <div class="row py-12 d-flex align-items-center">
-  
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0">Connect on social networks!</h6>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-7 text-center text-md-right">
-             
-            <!-- GitHub-->
-             <a class="gplus-ic" href="https://github.com/pmulhern" target="_blank">
-              <i class="fab fa-github white-text mr-4" ></i>
-            </a>
-            <!--Linkedin -->
-            <a class="li-ic" href="https://www.linkedin.com/in/patrick-mulhern-1a82b66b?trk=profile-badge" target="_blank">
-              <i class="fab fa-linkedin-in white-text mr-4"> </i>
-            </a>
-            <!-- Facebook -->
-            <!-- <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100017525283892" target="_blank">
-              <i class="fab fa-facebook-f white-text mr-4"> </i>
-            </a> -->
-            <!-- Twitter -->
-            <a class="tw-ic" href="https://twitter.com/PatrickMulher13" target="_blank">
-              <i class="fab fa-twitter white-text mr-4"> </i>
-            </a>
+  <div>
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-12 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Connect on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
            
-          </div>
-          <!-- Grid column -->
-  
-        </div>
-        <!-- Grid row-->
-  
-      </div>
-    </div>
-  
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-5">
-  
-      <!-- Grid row -->
-      <div class="row mt-3 dark-grey-text">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-  
-          <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">Patrick J. Mulhern Jr.</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>Featuring an array of web development and backend services.  Projects are shown above with deployed sites and link to GitHub for code review.</p>
-  
+          <!-- GitHub-->
+           <a class="gplus-ic" href="https://github.com/pmulhern" target="_blank">
+            <i class="fab fa-github white-text mr-4" ></i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic" href="https://www.linkedin.com/in/patrick-mulhern-1a82b66b?trk=profile-badge" target="_blank">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!-- Facebook -->
+          <!-- <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100017525283892" target="_blank">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a> -->
+          <!-- Twitter -->
+          <a class="tw-ic" href="https://twitter.com/PatrickMulher13" target="_blank">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+         
         </div>
         <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-  
-          <!-- Web Services - Just making stuff up for now -->
-          <h6 class="text-uppercase font-weight-bold">Web Services</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a class="dark-grey-text" >HTML Refactoring</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" >Responsive Web Page Design</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" >Unique and Personal Website Schemas</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" >Dynamic content featuring Javascript/ jQuery</a>
-          </p>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-  
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Back End Services</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a class="dark-grey-text" >Query Development</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" >Effeciency Protocols</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" >Custom Report Development</a>
-          </p>
 
-  
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-  
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Contact Information</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <i class="fas fa-home mr-3"></i> Philadelphia, PA 19114, US</p>
-          <p>
-            <i class="fas fa-envelope mr-3"></i> Patrick.J.Mulhern1@gmail.com</p>
-          <p>
-            <i class="fas fa-phone mr-3"></i> (215) 813-4817</p>
-          <p>
-            <i class="fas fa-print mr-3"></i> (267) 498-7213</p>
-  
-        </div>
-        <!-- Grid column -->
-  
       </div>
-      <!-- Grid row -->
-  
+      <!-- Grid row-->
+
     </div>
-    <!-- Footer Links -->
-  
-  </footer>
-  <!-- Footer -->
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Patrick J. Mulhern Jr.</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Experience with both front and back end development.  Check out my Portfolio page on the above Navbar for examples of recent projects!</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Web Services - Just making stuff up for now -->
+        <h6 class="text-uppercase font-weight-bold">Front End</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" >HTML Refactoring</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" >Responsive Web Page Design</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" >Unique and Personal Website Schemas</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" >Dynamic content featuring Javascript/ jQuery</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Back End</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" >Node.js, SQL and NoSQL</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" >Server Side Applications</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" >Custom Report Development</a>
+        </p>
+
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact Information</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Philadelphia, PA 19114, US</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> Patrick.J.Mulhern1@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> (215) 813-4817</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> (267) 498-7213</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

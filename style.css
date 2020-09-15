@@ -1,6 +1,6 @@
 /* Adding the background to all 3 html pages*/
 body {
-background: url(./texture.png)
+background: url(./Assets/texture.png)
 }
 
 /* Formatting my name on the nav bar*/
@@ -52,7 +52,7 @@ background: url(./texture.png)
 #portfolio {
     color: #21d192;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     }
 
 /* Formatting the line that separates the headers from the sections on the main cards/ forms*/  
